@@ -1,4 +1,4 @@
-angular.module('customer.profile', ['angular.usecase.adapter', 'rest.client'])
+angular.module('customer.profile', ['angular.usecase.adapter', 'rest.client', 'config', 'notifications'])
     .controller('CustomerProfileController', ['$scope', 'usecaseAdapterFactory', 'restServiceHandler', 'config', 'topicMessageDispatcher', CustomerProfileController]);
 
 function CustomerProfileController($scope, usecaseAdapterFactory, restServiceHandler, config, topicMessageDispatcher) {
