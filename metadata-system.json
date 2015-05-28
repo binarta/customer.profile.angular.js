@@ -1,0 +1,17 @@
+{
+  "msgs":{
+    "nl":{
+      "customer.profile.update.success": "Profiel opgeslagen",
+      "customer.profile.vat.whitelist": "BTW nummer is in ongeldig formaat"
+    }, "en":{
+      "customer.profile.update.success": "Profile was successfully updated",
+      "customer.profile.vat.whitelist": "Invalid VAT number"
+    }, "fr":{
+      "customer.profile.update.success": "Profil enregistré",
+      "customer.profile.vat.whitelist": "Ce numéro de TVA est invalide"
+    }, "de":{
+      "customer.profile.update.success": "Profil gespeichert",
+      "customer.profile.vat.whitelist": "Ungültiges Format der MwSt.-Nummer"
+    }
+  }
+}
