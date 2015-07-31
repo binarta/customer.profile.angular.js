@@ -2,7 +2,6 @@
   "name": "binarta.customer.profile.angular",
   "main": [
     "./src/customer.profile.js",
-    "./metadata.json",
     "./metadata-system.json",
     "./metadata-app.json"
   ],
