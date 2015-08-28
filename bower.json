@@ -2,8 +2,7 @@
   "name": "binarta.customer.profile.angular",
   "main": [
     "./src/customer.profile.js",
-    "./metadata-system.json",
-    "./metadata-app.json"
+    "./metadata-system.json"
   ],
   "dependencies": {
     "angular": "1.3.*",

@@ -1,17 +1,33 @@
 {
   "msgs":{
     "nl":{
+      "customer.profile.title": "Mijn profiel",
+      "customer.profile.vat.label": "BTW",
+      "customer.profile.vat.info": "Het BTW nummer moet beginnen met 2 letters gevolgd door cijfers. BV: BE123456789",
       "customer.profile.update.success": "Profiel opgeslagen",
-      "customer.profile.vat.whitelist": "BTW nummer is in ongeldig formaat"
+      "customer.profile.vat.whitelist": "BTW nummer is in ongeldig formaat",
+      "customer.profile.email.label": "E-mail"
     }, "en":{
+      "customer.profile.title": "My profile",
+      "customer.profile.vat.label": "VAT",
+      "customer.profile.vat.info": "Your VAT number should start with 2 letters followed by numbers e.g.: BE123456789",
       "customer.profile.update.success": "Profile was successfully updated",
-      "customer.profile.vat.whitelist": "Invalid VAT number"
+      "customer.profile.vat.whitelist": "Invalid VAT number",
+      "customer.profile.email.label": "Email"
     }, "fr":{
+      "customer.profile.title": "My profile",
+      "customer.profile.vat.label": "TVA",
+      "customer.profile.vat.info": "Votre numéro de TVA doit commencer par 2 lettres suivies de chiffres. Par exemple: BE123456789",
       "customer.profile.update.success": "Profil enregistré",
-      "customer.profile.vat.whitelist": "Ce numéro de TVA est invalide"
+      "customer.profile.vat.whitelist": "Ce numéro de TVA est invalide",
+      "customer.profile.email.label": "E-mail"
     }, "de":{
+      "customer.profile.title": "My profile",
+      "customer.profile.vat.label": "MwSt.",
+      "customer.profile.vat.info": "Die MwSt.-Nummer muss mit 2 Buchstaben, gefolgt von Ziffern beginnen. Beispiel: BE123456789",
       "customer.profile.update.success": "Profil gespeichert",
-      "customer.profile.vat.whitelist": "Ungültiges Format der MwSt.-Nummer"
+      "customer.profile.vat.whitelist": "Ungültiges Format der MwSt.-Nummer",
+      "customer.profile.email.label": "E-Mail"
     }
   }
 }
