@@ -14,7 +14,7 @@ describe('customer profile', function() {
     beforeEach(inject(function($rootScope, usecaseAdapterFactory, restServiceHandler, topicMessageDispatcher, topicMessageDispatcherMock) {
         scope = $rootScope.$new();
         usecaseAdapter = usecaseAdapterFactory;
-        usecaseAdapter.andReturn(presenter);
+        usecaseAdapter.and.returnValue(presenter);
         rest = restServiceHandler;
         dispatcher = topicMessageDispatcher;
         dispatcherMock = topicMessageDispatcherMock;
@@ -30,13 +30,13 @@ describe('customer profile', function() {
 
         function usecaseAdapterReceivesScope() {
             it('usecase adapter receives scope', function() {
-                expect(usecaseAdapter.calls[0].args[0]).toEqual(scope);
+                expect(usecaseAdapter.calls.first().args[0]).toEqual(scope);
             });
         }
 
         function restServiceGetsCalledWithPresenter() {
             it('rest service gets called with presenter', function() {
-                expect(rest.calls[0].args[0]).toEqual(presenter);
+                expect(rest.calls.first().args[0]).toEqual(presenter);
             });
         }
 
@@ -58,7 +58,7 @@ describe('customer profile', function() {
                 restServiceGetsCalledWithPresenter();
 
                 it('on success put payload on scope', function() {
-                    usecaseAdapter.calls[0].args[1]({vat: 'vat'});
+                    usecaseAdapter.calls.first().args[1]({vat: 'vat'});
                     expect(scope.vat).toEqual('vat');
                 });
             });
@@ -92,7 +92,7 @@ describe('customer profile', function() {
                 restServiceGetsCalledWithPresenter();
 
                 it('on success put payload on scope', function() {
-                    usecaseAdapter.calls[0].args[1]();
+                    usecaseAdapter.calls.first().args[1]();
                     expect(dispatcherMock['system.success']).toEqual({code:'customer.profile.update.success', default:'Profile was successfully updated'});
                 });
             });

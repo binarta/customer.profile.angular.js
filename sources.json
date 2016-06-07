@@ -1,0 +1,5 @@
+{
+  "default": {
+    "customer.profile": "bower_components/binarta.customer.profile.angular/src/main/customer.profile.js"
+  }
+}
