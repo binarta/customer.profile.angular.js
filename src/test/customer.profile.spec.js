@@ -53,7 +53,7 @@ describe('customer profile', function() {
                 usecaseAdapterReceivesScope();
 
                 it('params get populated on presenter', function () {
-                    expect(presenter.params).toEqual({method: 'GET', url: 'api/customer', withCredentials:true});
+                    expect(presenter.params).toEqual({method: 'POST', url: 'api/view-customer-profile', withCredentials:true});
                 });
                 restServiceGetsCalledWithPresenter();
 
@@ -65,12 +65,12 @@ describe('customer profile', function() {
 
             describe('with baseUri', function() {
                 beforeEach(function() {
-                    config.baseUri = 'base-uri/'
+                    config.baseUri = 'base-uri/';
                     scope.init();
                 });
 
                 it('params get populated on presenter', function () {
-                    expect(presenter.params).toEqual({method: 'GET', url: 'base-uri/api/customer', withCredentials:true});
+                    expect(presenter.params).toEqual({method: 'POST', url: 'base-uri/api/view-customer-profile', withCredentials:true});
                 });
             });
         });
