@@ -11,8 +11,8 @@ function CustomerProfileController($scope, usecaseAdapterFactory, restServiceHan
         };
         var presenter = usecaseAdapterFactory($scope, onSuccess);
         presenter.params = {
-            method: 'GET',
-            url: baseUri + 'api/customer',
+            method: 'POST',
+            url: baseUri + 'api/view-customer-profile',
             withCredentials:true
         };
         restServiceHandler(presenter)
